@@ -51,12 +51,12 @@
     }
 
     .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top:20px;
-      margin-bottom: 20px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
     .logo {
       display: flex;
@@ -258,6 +258,7 @@
       border-bottom: 0.5px solid var(--border);
       cursor: pointer;
       transition: background 0.15s;
+      text-decoration: none;
     }
 
     .rohit-row:active { background: #f9f8f4; }
@@ -573,7 +574,7 @@
         <span></span><span></span><span></span>
       </div>
     </div>
-    <div class="balance">$990.09</div>
+    <div class="balance">$1,000.39</div>
   </div>
 
   <!-- Scrollable Body -->
@@ -589,7 +590,7 @@
         </div>
       </div>
       <div class="card-amount">$3.29</div>
-      <div class="card-sub">$26.22 total</div>
+      <div class="card-sub">$50.00 total</div>
       <button class="load-btn" onclick="showModal()">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
         Load card
@@ -610,16 +611,17 @@
             <div class="row-sub">1 CAD = 0.7223 USD</div>
           </div>
         </div>
-        <div class="rohit-row" onclick="showModal()">
+        <!-- Rohit row now navigates to rohit.html -->
+        <a class="rohit-row" href="transaction.html">
           <div class="rohit-left">
             <div class="yellow-bar"></div>
-            <span class="rohit-name">Rohit &rsaquo;</span>
+            <span class="rohit-name">Transaction &rsaquo;</span>
           </div>
           <div class="rohit-right">
-            <div class="rohit-amount">$963.87</div>
-            <div class="rohit-avail">$0.10 available</div>
+            <div class="rohit-amount">$980.10</div>
+            <div class="rohit-avail">$140.00 available</div>
           </div>
-        </div>
+        </a>
         <div class="promo-row" onclick="showModal()">
           <div class="promo-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9B4DCA" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
